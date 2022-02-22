@@ -1,0 +1,69 @@
+version: '3.1'
+
+services:
+
+#    web:
+#        env_file:
+#            - docker_app.env
+
+
+    web:
+        container_name: votes_web
+        build:
+            context: ./web
+            dockerfile: Dockerfile.yml
+        
+        environment:
+            - APACHE_RUN_USER=www-data
+        volumes:
+            - ${APP_PATH_HOST}:${APP_PTH_CONTAINER}
+        ports:
+            - 8081:80
+        working_dir: ${APP_PTH_CONTAINER}
+
+
+    db:
+        container_name: votes_db
+        image: mysql:5.7.24
+        restart: always
+        environment: 
+            # MYSQL_ROOT_PASSWORD: 1
+
+            - MYSQL_DATABASE=DockerVotes
+            - MYSQL_USER=docker_user
+            - MYSQL_PASSWORD=4321
+            - MYSQL_ALLOW_EMPTY_PASSWORD=false
+            - MYSQL_ROOT_PASSWORD=321
+            - TZ=Europe/Kiev
+        volumes:
+            - ${DB_PATH_HOST}:/var/lib/mysql
+
+
+#     phpmyadmin:
+#         container_name: votes_phpmyadmin
+#         depends_on:
+#           - db
+#         image: phpmyadmin/phpmyadmin
+#         restart: always
+#         ports:
+#           - 8082:80
+#         environment:
+#           PMA_HOST: db
+#           MYSQL_ROOT_PASSWORD: 1
+
+    adminer:
+        container_name: votes_adminer
+        image: adminer
+        restart: always
+        ports:
+            - 8082:8080
+        links:
+            - db
+
+    composer:
+        container_name: votes_composer
+        image: composer:1.8
+        volumes:
+            - ${APP_PATH_HOST}:${APP_PTH_CONTAINER}
+        working_dir: ${APP_PTH_CONTAINER}
+        command: composer install --ignore-platform-reqs

@@ -1,0 +1,199 @@
+// Variables
+@import "../variables";
+
+.container {
+  max-width: 1260px !important;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 !important;
+}
+
+#app{
+  max-height:800px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.wrapper {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* MODAL DIALOGS BLOCK START */
+.modal-dialog {
+  max-width: 800px;
+  max-height: 740px;
+  margin-top: 30px;
+}
+
+.modal-content {
+  min-width: 800px;
+  min-height: 740px;
+  padding: 0.5em;
+  margin: 0px;
+}
+
+.modal-dialog-3rows {
+  max-width: 800px;
+  max-height: 380px;
+  position: relative;
+  width: 600px;
+  margin: auto;
+  margin-top: 40px;
+  box-sizing: border-box;
+  display: block;
+}
+
+.modal-content-3rows {
+  min-width: 800px;
+  padding: 0.5em;
+  min-height: 380px;
+  background-color: $background_color;
+  position: relative;
+  border: 1px solid $border_color;
+  border-radius: 6px;
+  background-clip: padding-box;
+  outline: 0;
+}
+
+.modal-body-3rows {
+  padding: $indent_sm;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  align-content: center;
+  margin: auto;
+  max-height: 310px;
+  border: 0px solid red;
+  background-color: $background_color;
+}
+
+
+.modal-dialog-4rows {
+  max-width: 800px;
+  max-height: 420px;
+  position: relative;
+  width: 600px;
+  margin: auto;
+  margin-top: 60px;
+  box-sizing: border-box;
+  background-color: $background_color;
+  display: block;
+}
+.modal-content-4rows {
+  min-width: 800px;
+  padding: 0.5em;
+  min-height: 420px;
+  background-color: $background_color;
+  position: relative;
+  border: 1px solid $border_color;
+  border-radius: 6px;
+  background-clip: padding-box;
+  outline: 0;
+}
+.modal-body-4rows {
+  padding: $indent_sm;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  align-content: center;
+  margin: auto;
+  max-height: 350px;
+  border: 0px solid red;
+  background-color: $background_color;
+}
+
+
+.modal-dialog-7rows {
+  max-width: 800px;
+  max-height: 730px;
+  position: relative;
+  width: 600px;
+  margin: auto;
+  margin-top: 60px;
+  box-sizing: border-box;
+  display: block;
+}
+
+
+.modal-content-7rows {
+  min-width: 800px;
+  padding: 0.5em;
+  min-height: 730px;
+  background-color: $background_color;
+  position: relative;
+  border: 1px solid $border_color;
+  border-radius: 6px;
+  background-clip: padding-box;
+  outline: 0;
+}
+
+
+
+.modal-title {
+  font-size: large;
+  padding: $indent_sm;
+  color: $text-color;
+}
+
+.modal-body {
+  padding: $indent_md;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-height: 580px;
+}
+
+
+.modal-content-full-width {
+  min-width: 1280px;
+  min-height: 780px;
+  border: 0px red;
+  padding: 0.5em;
+  margin: auto;
+  margin-top: 30px;
+  background-color: $background_color;
+}
+
+.modal-dialog-full-width {
+  max-width: 1280px;
+  max-height: 780px;
+  margin-top: 30px;
+  background-color: $background_color ;
+}
+
+.modal-body-full-width {
+  padding: $indent_sm;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  align-content: center;
+  margin: auto;
+  max-height: 780px;
+  border: 0px solid red;
+  background-color: $background_color;
+}
+
+
+
+.modal-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/* MODAL DIALOGS BLOCK END */
+
+.pull_left_only_on_xs {
+  text-align: left !important;
+  //background-color: yellow;
+}
+
+/* IMAGE PREVIEW BLOCK START */
+
+.image_preview {
+  border: 1px dotted gray;
+  padding: 2px;
+  margin: 5px;
+  max-width: 520px;
+  max-height: auto;
+}
+
+/* IMAGE PREVIEW BLOCK END */

@@ -1,0 +1,265 @@
+/* color of button */
+
+/* background color of cancel button */
+
+/* background color of previos button */
+
+/* $indent for image : margin, padding */
+
+/* FORMS BLOCK START */
+
+.container {
+  max-width: 470px !important;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#app {
+  max-height: 320px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#wrapper {
+  border: none;
+  padding: 5px;
+  margin: 0 0;
+}
+
+.white-box,
+.col-sm-12 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.bootstrap-growl {
+  max-width: 450px;
+}
+
+/* FORMS BLOCK END */
+
+/* MODAL DIALOGS BLOCK START */
+
+.modal-dialog {
+  max-height: 200px;
+  padding-top: 0;
+  margin-top: 10px !important;
+}
+
+.modal-content {
+  min-width: 450px;
+  min-height: 200px;
+  padding: 0.1em;
+  margin: 0;
+}
+
+.modal-body {
+  padding: 0.2em;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 0;
+  max-height: 180px;
+  border: 0px solid red;
+  background-color: #f5f8fa;
+}
+
+.modal-content-3rows {
+  min-width: 450px;
+  min-height: 280px;
+  padding: 0.5em;
+  position: relative;
+  background-color: #f5f8fa;
+  border: 1px solid #999;
+  border-radius: 6px;
+  background-clip: padding-box;
+  outline: 0;
+}
+
+.modal-dialog-3rows {
+  max-width: 450px;
+  max-height: 280px;
+  position: relative;
+  background-color: #f5f8fa;
+  width: 600px;
+  margin: auto;
+  margin-top: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+}
+
+.modal-body-3rows {
+  padding: 0.5em;
+  max-height: 220px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: auto;
+  border: 0px solid red;
+  background-color: #f5f8fa;
+}
+
+.modal-content-4rows {
+  min-width: 450px;
+  min-height: 790px;
+  padding: 0.5em;
+  position: relative;
+  background-color: #f5f8fa;
+  border: 1px solid #999;
+  border-radius: 6px;
+  background-clip: padding-box;
+  outline: 0;
+}
+
+.modal-dialog-4rows {
+  max-width: 450px;
+  max-height: 790px;
+  position: relative;
+  background-color: #f5f8fa;
+  width: 600px;
+  margin: auto;
+  margin-top: 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+}
+
+.modal-content-7rows {
+  min-width: 450px;
+  min-height: 1070px;
+  padding: 0.5em;
+  position: relative;
+  background-color: #f5f8fa;
+  border: 1px solid #999;
+  border-radius: 6px;
+  background-clip: padding-box;
+  outline: 0;
+}
+
+.modal-dialog-7rows {
+  max-width: 450px;
+  max-height: 1070px;
+  position: relative;
+  background-color: #f5f8fa;
+  width: 600px;
+  margin: auto;
+  margin-top: 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+}
+
+.modal-title {
+  font-size: medium;
+}
+
+.modal-dialog {
+  max-width: 450px;
+  max-height: 600px;
+  margin: auto;
+  margin-top: 60px;
+}
+
+/*
+.modal-dialog-full-width {
+  padding:  $indent_sm;
+  width: 470px;
+  background-color: $background_color;
+  margin: auto;
+}
+.modal-content-full-width {
+  width: 470px;
+  border: 0 magenta;
+  padding: $indent_xs_2;
+  margin: 0;
+}
+*/
+
+.modal-content-full-width {
+  min-width: 480px;
+  min-height: 320px;
+  border: 0px red;
+  padding: 0.5em;
+  margin: auto;
+  background-color: #f5f8fa;
+}
+
+.modal-dialog-full-width {
+  max-width: 480px;
+  max-height: 320px;
+  margin-top: 20px;
+  background-color: #f5f8fa;
+}
+
+.modal-body-full-width {
+  padding: 0.5em;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: auto;
+  border: 0px solid red;
+  background-color: #f5f8fa;
+}
+
+.modal-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/* MODAL DIALOGS BLOCK END */
+
+.pull_left_only_on_xs {
+  text-align: left !important;
+}
+
+/* VOTE IMAGE BLOCK START */
+
+.single_vote_image_left_aligned {
+  border: 1px dotted gray;
+  padding: 2px;
+  margin: 5px;
+  max-width: 300px;
+  max-height: auto;
+}
+
+.image_in_3_columns_list {
+  border: 1px dotted gray;
+  padding: 2px;
+  margin: 2px;
+  max-width: 400px;
+  max-height: auto;
+}
+
+.vote_item_selection_image {
+  border: 1px dotted gray;
+  padding: 2px;
+  margin: 5px;
+  max-width: 240px;
+  max-height: auto;
+}
+
+/* VOTE IMAGE BLOCK END */
+
+.chart_progress_bar {
+  width: 220px;
+  margin-left: 10px;
+}
+
+/* TAG IMAGE BLOCK START */
+
+.tag_image_left_aligned {
+  border: 1px dotted gray;
+  padding: 2px;
+  margin: 5px;
+  max-width: 300px;
+  max-height: auto;
+}
+

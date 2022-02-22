@@ -1,0 +1,212 @@
+/* color of button */
+
+/* background color of cancel button */
+
+/* background color of previos button */
+
+/* $indent for image : margin, padding */
+
+.container {
+  max-width: 760px !important;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 !important;
+}
+
+#app {
+  max-height: 1024px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+wrapper {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/* MODAL DIALOGS BLOCK START */
+
+.modal-dialog {
+  max-width: 720px;
+  max-height: 820px;
+  margin-top: 60px;
+  background-color: #f5f8fa;
+}
+
+.modal-content {
+  min-width: 640px;
+  min-height: 820px;
+  padding: 0.5em;
+  margin: 0;
+  /* text-align: center; */
+  /* align-content: center; */
+  background-color: #f5f8fa;
+}
+
+.modal-body {
+  padding: 1em;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: auto;
+  max-height: 680px;
+  border: 0px solid red;
+  background-color: #f5f8fa;
+}
+
+.modal-dialog-3rows {
+  max-width: 640px;
+  max-height: 360px;
+  position: relative;
+  background-color: #f5f8fa;
+  width: 640px;
+  margin: 30px auto;
+  margin-top: 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+}
+
+.modal-content-3rows {
+  min-width: 640px;
+  min-height: 360px;
+  padding: 0.5em;
+  position: relative;
+  background-color: #f5f8fa;
+  border: 1px solid #999;
+  border-radius: 6px;
+  background-clip: padding-box;
+  outline: 0;
+}
+
+.modal-body-3rows {
+  padding: 0.5em;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: auto;
+  max-height: 310px;
+  border: 0px solid red;
+  background-color: #f5f8fa;
+}
+
+.modal-dialog-4rows {
+  max-width: 720px;
+  max-height: 420px;
+  position: relative;
+  background-color: #f5f8fa;
+  width: 640px;
+  margin: 30px auto;
+  margin-top: 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+}
+
+.modal-content-4rows {
+  min-width: 640px;
+  min-height: 420px;
+  padding: 0.5em;
+  position: relative;
+  background-color: #f5f8fa;
+  border: 1px solid #999;
+  border-radius: 6px;
+  background-clip: padding-box;
+  outline: 0;
+}
+
+.modal-body-4rows {
+  padding: 0.5em;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: auto;
+  max-height: 380px;
+  border: 0px solid red;
+  background-color: #f5f8fa;
+}
+
+.modal-dialog-7rows {
+  max-width: 640px;
+  max-height: 820px;
+  position: relative;
+  background-color: #f5f8fa;
+  width: 640px;
+  margin: 30px auto;
+  margin-top: 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+}
+
+.modal-content-7rows {
+  min-width: 640px;
+  min-height: 820px;
+  /* border: 0px red; */
+  padding: 0.5em;
+  /* text-align: center; */
+  position: relative;
+  background-color: #f5f8fa;
+  border: 1px solid #999;
+  border-radius: 6px;
+  background-clip: padding-box;
+  outline: 0;
+}
+
+.modal-content-full-width {
+  min-width: 768px;
+  min-height: 1000px;
+  border: 0px red;
+  padding: 0.5em;
+  margin: auto;
+  margin-top: 30px;
+  background-color: #f5f8fa;
+}
+
+.modal-dialog-full-width {
+  max-width: 768px;
+  max-height: 1000px;
+  margin-top: 30px;
+  background-color: #f5f8fa;
+}
+
+.modal-body-full-width {
+  padding: 0.5em;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: auto;
+  max-height: 940px;
+  border: 0px solid red;
+  background-color: #f5f8fa;
+}
+
+.modal-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.modal-title {
+  font-size: large;
+}
+
+/* MODAL DIALOGS BLOCK END */
+
+/* IMAGE PREVIEW BLOCK START */
+
+.image_preview {
+  border: 1px dotted gray;
+  padding: 2px;
+  margin: 5px;
+  max-width: 260px;
+  max-height: auto;
+}
+
+/* IMAGE PREVIEW BLOCK END */
+

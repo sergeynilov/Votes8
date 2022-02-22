@@ -1,0 +1,261 @@
+// Variables
+@import "../variables";
+
+.container {
+  max-width: 760px !important;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#app{
+  max-height:1024px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+
+
+/* MODAL DIALOGS BLOCK START */
+
+.modal-dialog {
+  max-width: 720px;
+  max-height: 820px;
+  margin-top: 60px;
+  background-color: $background_color;
+}
+
+.modal-content {
+  min-width: 640px;
+  min-height: 820px;
+  padding: 0.5em;
+  margin: 0;
+  margin-top: 40px;
+  /* text-align: center; */
+  /* align-content: center; */
+  //background-color: maroon;
+  background-color: $background_color;
+}
+
+
+.modal-body {
+  padding: $indent_md;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  align-content: center;
+  //margin: auto;
+  max-height: 680px;
+  margin-bottom: 20px;
+  //background-color: yellow;
+  background-color: $background_color;
+}
+
+
+.modal-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+.modal-title {
+  font-size: large;
+  color: $text-color;
+}
+
+
+
+.modal-dialog-3rows {
+  max-width: 640px;
+  max-height: 360px;
+  position: relative;
+  background-color: $background_color;
+  width: 640px;
+  margin: 30px auto;
+  margin-top: 60px;
+  box-sizing: border-box;
+  display: block;
+}
+
+.modal-content-3rows {
+  min-width: 640px;
+  min-height: 360px;
+  padding: 0.5em;
+  position: relative;
+  background-color: $background_color;
+  border: 1px solid $border_color;
+  border-radius: 6px;
+  background-clip: padding-box;
+  outline: 0;
+}
+
+.modal-body-3rows {
+  padding: $indent_sm;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  align-content: center;
+  margin: auto;
+  max-height: 310px;
+  border: 0px solid red;
+  background-color: $background_color;
+}
+
+.modal-dialog-4rows {
+  max-width: 720px;
+  max-height: 420px;
+  position: relative;
+  background-color: $background_color;
+  width: 640px;
+  margin: 30px auto;
+  margin-top: 60px;
+  box-sizing: border-box;
+  display: block;
+}
+.modal-content-4rows {
+  min-width: 640px;
+  min-height: 420px;
+  padding: 0.5em;
+  position: relative;
+  background-color: $background_color;
+  border: 1px solid $border_color;
+  border-radius: 6px;
+  background-clip: padding-box;
+  outline: 0;
+}
+.modal-body-4rows {
+  padding: $indent_sm;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  align-content: center;
+  margin: auto;
+  max-height: 380px;
+  border: 0px solid red;
+  background-color: $background_color;
+}
+
+
+.modal-dialog-7rows {
+  max-width: 640px;
+  max-height: 820px;
+  position: relative;
+  background-color: $background_color;
+  width: 640px;
+  margin: 30px auto;
+  margin-top: 60px;
+  box-sizing: border-box;
+  display: block;
+}
+
+.modal-content-7rows {
+  min-width: 640px;
+  min-height: 820px;
+  /* border: 0px red; */
+  padding: 0.5em;
+  /* text-align: center; */
+  //background-color: navy;
+
+  position: relative;
+  background-color: $background_color;
+  border: 1px solid $border_color;
+  border-radius: 6px;
+  background-clip: padding-box;
+  outline: 0;
+}
+//
+//.modal-dialog-full-width {
+//  padding:  $indent_sm;
+//  width: 750px;
+//  background-color: $background_color;
+//  margin: 20px auto;
+//}
+//
+//.modal-content-full-width {
+//  width: 750px;
+//  border: 0 red;
+//  padding: $indent_sm;
+//  margin: 0;
+//  align-content: center;
+//
+//}
+
+.modal-content-full-width {
+  min-width: 768px;
+  min-height: 1000px;
+  padding: 0.5em;
+  margin: auto;
+  margin-top: 30px;
+  background-color: $background_color;
+}
+
+.modal-dialog-full-width {
+  max-width: 768px;
+  max-height: 1000px;
+  margin-top: 30px;
+  background-color: $background_color ;
+}
+
+.modal-body-full-width {
+  padding: $indent_sm;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  align-content: center;
+  margin: auto;
+  max-height: 940px;
+  background-color: $background_color;
+}
+
+
+
+
+
+/* MODAL DIALOGS BLOCK END */
+
+
+/* VOTE IMAGE BLOCK START */
+.single_vote_image_left_aligned {
+  border: 1px dotted gray;
+  padding: 2px;
+  margin: 5px;
+  max-width: 260px;
+  max-height: auto;
+}
+
+.image_in_3_columns_list {
+  border: 1px dotted gray;
+  padding: 2px;
+  margin: 2px;
+  max-width: 220px;
+  max-height: auto;
+}
+
+.vote_item_selection_image {
+  border: 1px dotted gray;
+  padding: 2px;
+  margin: 5px;
+  max-width: 220px;
+  max-height: auto;
+}
+
+/* VOTE IMAGE BLOCK END */
+
+.chart_progress_bar {
+  width:200px;
+  margin-left: 10px;
+}
+
+
+/* TAG IMAGE BLOCK START */
+.tag_image_left_aligned {
+  border: 1px dotted gray;
+  padding: 2px;
+  margin: 5px;
+  max-width: 300px;
+  max-height: auto;
+}
+
+
+/* TAG IMAGE BLOCK END */
+

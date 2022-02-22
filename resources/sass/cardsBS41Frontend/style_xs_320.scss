@@ -1,0 +1,264 @@
+// Variables
+@import "../variables";
+
+
+/* FORMS BLOCK START */
+.container {
+  max-width: 310px !important;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+wrapper {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.white-box, .col-sm-12{
+  padding-left: 0;
+  padding-right: 0;
+}
+.bootstrap-growl {
+  max-width:300px;
+}
+/* FORMS BLOCK END */
+
+/* MODAL DIALOGS BLOCK START */
+.modal-title {
+  font-size: medium;
+  color: $text-color;
+}
+
+
+.modal-dialog {
+  /* width: 800px; */
+  //max-width: 300px;
+  //max-height: 440px;
+  margin-top: 20px !important;
+  background-color: $background_color;
+}
+.modal-content {
+  min-width: 300px;
+  min-height: 440px;
+  padding: 0.5em;
+  margin: 0px;
+  border: 3px red;
+}
+.modal-body {
+  padding: $indent_xs;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  align-content: center;
+  margin: auto;
+  max-height: 380px;
+  border: 0px solid red;
+  background-color: $background_color;
+}
+
+.modal-dialog-3rows {
+  max-width: 300px;
+  max-height: 450px;
+  position: relative;
+  margin: 30px auto;
+  margin-top: 20px;
+  box-sizing: border-box;
+  display: block;
+}
+
+.modal-content-3rows {
+  min-width: 300px;
+  min-height: 450px;
+  padding: 0.5em;
+  position: relative;
+  background-color: $background_color;
+  border: 5px solid $border_color;
+  border-radius: 6px;
+  background-clip: padding-box;
+  outline: 0;
+}
+.modal-body-3rows {
+  padding: $indent_sm;
+  max-height: 410px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  align-content: center;
+  margin: auto;
+  border: 0px solid red;
+  background-color: $background_color;
+}
+
+.modal-dialog-4rows {
+  max-width: 300px;
+  max-height: 790px;
+  position: relative;
+  margin: 30px auto;
+  margin-top: 60px;
+  box-sizing: border-box;
+  display: block;
+}
+
+
+.modal-dialog-7rows {
+  max-width: 300px;
+  max-height: 1070px;
+  position: relative;
+  margin: 30px auto;
+  margin-top: 60px;
+  box-sizing: border-box;
+  display: block;
+}
+
+
+.modal-dialog-full-width {
+  padding:  $indent_sm;
+  width: 300px;
+  background-color: $background_color;
+  margin: auto;
+}
+
+
+.modal-content-4rows {
+  min-width: 300px;
+  min-height: 790px;
+  padding: 0.5em;
+  position: relative;
+  background-color: $background_color;
+  border: 5px solid $border_color;
+  border-radius: 6px;
+  background-clip: padding-box;
+  outline: 0;
+}
+
+.modal-content-7rows {
+  min-width: 300px;
+  min-height: 1070px;
+  padding: 0.5em;
+  position: relative;
+  background-color: $background_color;
+  border: 5px solid $border_color;
+  border-radius: 6px;
+  background-clip: padding-box;
+  outline: 0;
+}
+
+//.modal-content-full-width {
+//  width: 300px;
+//  border: 0 magenta;
+//  padding: $indent_xs_2;
+//  margin: 0;
+//}
+
+
+.modal-content-full-width {
+  min-width: 600px;
+  min-height: 1000px;
+  border: 0px red;
+  padding: 0.5em;
+  margin: auto;
+  //margin-top: 30px;
+  background-color: $background_color;
+}
+
+.modal-dialog-full-width {
+  max-width: 600px;
+  max-height: 1000px;
+  margin-top: 20px;
+  background-color: $background_color ;
+}
+
+.modal-body-full-width {
+  padding: $indent_sm;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  align-content: center;
+  margin: auto;
+  max-height: 840px;
+  border: 0px solid red;
+  background-color: $background_color;
+}
+
+.modal-footer {
+  position: absolute;
+  left: 0;
+  bottom: 50px;
+  width: 100%;
+}
+
+/* MODAL DIALOGS BLOCK END */
+
+/* MARGINS_PADDINGS DIALOGS BLOCK START */
+.top_margin_sm_only_on_xs {
+  margin-top:$indent_sm;
+}
+.top_margin_md_only_on_xs {
+  margin-top:$indent_sm;
+}
+.top_margin_lg_only_on_xs {
+  margin-top: $indent_lg;
+}
+
+.pull_right_only_on_xs {
+  float: right !important;
+  //background-color: maroon;
+}
+.pull_left_only_on_xs {
+  text-align: left !important;
+  //background-color: yellow;
+}
+
+.pull_left_only_on_xs {
+  text-align: left !important;
+  //background-color: yellow;
+}
+
+
+/* MARGINS_PADDINGS DIALOGS BLOCK END */
+
+/* VOTE IMAGE BLOCK START */
+.single_vote_image_left_aligned {
+  border: 1px dotted gray;
+  //border: 2px dotted red;
+  padding: 2px;
+  margin: 5px;
+  max-width: 200px;
+  max-height: auto;
+}
+
+.image_in_3_columns_list {
+  border: 1px dotted gray;
+  //border: 2px dotted green;
+  padding: 2px;
+  margin: 2px;
+  max-width: 280px;
+  max-height: auto;
+}
+
+
+/* VOTE IMAGE BLOCK END */
+
+
+
+/* TAG IMAGE BLOCK START */
+.tag_image_left_aligned {
+  border: 1px dotted gray;
+  padding: 2px;
+  margin: 5px;
+  max-width: 160px;
+  max-height: auto;
+}
+
+.vote_item_selection_image {
+  border: 1px dotted gray;
+  padding: 2px;
+  margin: 5px;
+  max-width: 220px;
+  max-height: auto;
+}
+/* TAG IMAGE BLOCK END */
+
+.chart_progress_bar {
+  width:200px;
+  margin-left: 10px;
+}
+

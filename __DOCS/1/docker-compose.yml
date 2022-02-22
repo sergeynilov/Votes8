@@ -1,0 +1,46 @@
+version: '3'
+
+services:
+
+    webapp:
+        build:
+        # need context and dockerfile as we do not use default Dockerfile
+            context: ./web
+            dockerfile: Dockerfile.yml
+        
+        environment:
+            - APACHE_RUN_USER=www-data
+        volumes:
+            - ${APP_PATH_HOST}:${APP_PTH_CONTAINER}
+        ports:
+            - 8080:80
+        working_dir: ${APP_PTH_CONTAINER}
+        
+        
+
+    db:
+#        image: mysql
+        image: mysql:5.6.41
+#        command: --default-authentication-plugin=mysql_native_password  --disable-partition-engine-check
+#        command: --default-authentication-plugin=mysql_native_password
+#        command:
+
+        restart: always
+        environment: 
+            MYSQL_ROOT_PASSWORD: 1
+        volumes:
+            - ${DB_PATH_HOST}:/var/lib/mysql
+
+    adminer:
+        image: adminer
+        restart: always
+        ports:
+            - 8081:8080
+            
+            
+    composer:
+        image: composer:1.6
+        volumes:
+            - ${APP_PATH_HOST}:${APP_PTH_CONTAINER}
+        working_dir: ${APP_PTH_CONTAINER}
+        command: composer install        

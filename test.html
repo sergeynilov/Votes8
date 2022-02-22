@@ -1,0 +1,80 @@
+						<br>
+{{--						<button type="button" class=" btn btn-secondary  " onclick="javascript:document.location='{{ URL::route('file-download',[$nextDownload['id']]) }}'">--}}
+{{--							<i class="fa fa-download"></i> &nbsp;Download--}}
+{{--						</button>--}}
+
+
+							
+							<div id="paypal-button"></div>
+							<script src="https://www.paypalobjects.com/api/checkout.js"></script>
+							<script>
+								paypal.Button.render({
+									// Configure environment
+									env: 'sandbox',
+									client: {
+										sandbox: 'Ad6aPS0Vdv6jxwQBYUW50cc6584ZSPJALB_i7fI_JdWcapR5JmtIA6PFMQZlOk_hb8EUZBwnagnXgJ66',
+										production: 'demo_production_client_id'
+									},
+									// Customize button (optional)
+									locale: 'en_US',
+									style: {
+										size: 'small',
+										color: 'blue',
+										shape: 'pill',
+									},
+
+									// Enable Pay Now checkout flow (optional)
+									commit: true,
+
+									// Set up a payment
+									payment: function(data, actions) {
+										var payment = actions.payment.create({
+
+											"note_to_payer": "Contact us for any questions on your order.",
+
+											"intent": "sale",
+											"payer": {
+												"payment_method": "paypal"
+											},
+
+											redirect_urls : { //redirect_urls
+												// return_url : 'http://local-votes.com/paypal_payment',
+												// cancel_url : 'http://local-votes.com/paypal_payment_cancel'
+												return_url : 'https://www.votes.nilov-sergey-demo-apps.tk/paypal_payment',
+												cancel_url : 'https://www.votes.nilov-sergey-demo-apps.tk/paypal_payment_cancel'
+											},
+											
+											transactions: [{
+												amount: {
+													total: '0.01',
+													currency: 'USD'
+												}
+											}]
+										});
+
+										console.log("payment payment::")
+										console.log(payment);
+										// alert( "::"+var_dump(-88) )
+										return payment;
+										
+									},
+									// Execute the payment
+									onAuthorize: function(data, actions) {
+										console.log("onAuthorize data::")
+										console.log( data )
+
+										console.log("onAuthorize actions::")
+										console.log( actions )
+
+										return actions.payment.execute().then(function() {
+											// Show a confirmation message to the buyer
+
+											window.alert('Thank you for your purchase! -12 .');
+										});
+									}
+								}, '#paypal-button');
+
+							</script>
+
+
+						<button type="button" class=" btn btn-secondary " onclick="javascript:document.location='{{ URL::route('file-download',[$nextDownload['id']]) }}'"	style="display:none">	<i class="fa fa-download"></i> &nbsp;Download</button>

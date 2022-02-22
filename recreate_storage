@@ -1,0 +1,5 @@
+cd public
+rm storage
+cd ../
+php artisan storage:link
+sudo chmod -R 777 /var/www/html/votes/storage 

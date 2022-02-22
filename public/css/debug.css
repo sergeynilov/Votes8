@@ -1,0 +1,38 @@
+/* color of button */
+
+/* background color of cancel button */
+
+/* background color of previos button */
+
+/* $indent for image : margin, padding */
+
+body {
+  border: 3px dotted brown;
+  background-color: #e5e500;
+}
+
+/*
+.test-device{
+  @if ($debug_mode  == 1) {
+    background: url(/images/defaultBS41Backend/test-device/xs320.png) center center no-repeat;
+    border: 0 dotted #E90E0E;
+  }
+}
+*/
+
+.container {
+  border: 2px dotted red !important;
+}
+
+.menu-items-container {
+  border: 2px olive dotted !important;
+}
+
+.menu-items-container {
+  border: 2px olive dotted;
+}
+
+.editable_field {
+  border: 2px darkgray solid;
+}
+

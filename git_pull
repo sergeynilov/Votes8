@@ -1,0 +1,10 @@
+cd  /var/www/html/votes
+git stash 
+
+git pull origin master 
+
+php artisan config:cache
+
+sudo chmod -R 777 recreate_storage
+
+./recreate_storage

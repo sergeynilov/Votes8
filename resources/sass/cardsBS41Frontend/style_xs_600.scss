@@ -1,0 +1,259 @@
+// Variables
+@import "../variables";
+
+/* FORMS BLOCK START */
+.container {
+  max-width: 580px !important;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#app{
+  max-height:1024px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+wrapper {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.white-box, .col-sm-12{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.bootstrap-growl {
+  max-width:560px;
+}
+
+/* FORMS BLOCK END */
+
+/* MODAL DIALOGS BLOCK START */
+
+.modal-dialog {
+  /* width: 800px; */
+  max-width: 580px;
+  max-height: 940px;
+  //margin: 30px auto;
+  margin-top: 30px !important;
+}
+
+.modal-content {
+  min-width: 580px;
+  min-height: 940px;
+  /* border: 0px red; */
+  padding: 0.5em;
+  margin: 0;
+  background-color: $background_color;
+}
+.modal-body {
+  padding: $indent_md;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-height: 800px;
+  border-bottom-color: $background_color;
+}
+
+
+.modal-dialog-3rows {
+  max-width: 520px;
+  max-height: 440px;
+  position: relative;
+  margin: auto;
+  margin-top: 60px;
+  box-sizing: border-box;
+  display: block;
+}
+.modal-content-3rows {
+  min-width: 540px;
+  min-height: 440px;
+  padding: 0.5em;
+  position: relative;
+  background-color: $background_color;
+  border: 5px solid $border_color;
+  border-radius: 6px;
+  background-clip: padding-box;
+  outline: 0;
+}
+.modal-body-3rows {
+  padding: $indent_sm;
+  max-height: 400px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  align-content: center;
+  margin: auto;
+  border: 0px solid red;
+  background-color: $background_color;
+}
+
+
+.modal-dialog-4rows {
+  max-width: 520px;
+  max-height: 910px;
+  position: relative;
+  margin: auto;
+  margin-top: 60px;
+  box-sizing: border-box;
+  display: block;
+}
+
+.modal-dialog-7rows {
+  max-width: 520px;
+  max-height: 840px;
+  position: relative;
+  margin: auto;
+  margin-top: 60px;
+  box-sizing: border-box;
+  display: block;
+}
+
+.modal-title {
+  font-size: medium;
+  color: $text-color;
+}
+
+
+.modal-content-4rows {
+  min-width: 540px;
+  min-height: 910px;
+  padding: 0.5em;
+  position: relative;
+  background-color: $background_color;
+  border: 5px solid $border_color;
+  border-radius: 6px;
+  background-clip: padding-box;
+  outline: 0;
+}
+
+.modal-content-7rows {
+  min-width: 540px;
+  min-height: 840px;
+  /* border: 0px red; */
+  padding: 0.5em;
+  /* text-align: center; */
+  //background-color: navy;
+
+  position: relative;
+  background-color: $background_color;
+  border: 5px solid $border_color;
+  border-radius: 6px;
+  background-clip: padding-box;
+  outline: 0;
+}
+
+
+/*
+.modal-dialog-full-width {
+  padding:  $indent_sm;
+  width: 590px;
+  background-color: $background_color;
+  margin: 20px auto;
+}
+
+
+.modal-content-full-width {
+  width: 590px;
+  border: 0 magenta;
+  padding: $indent_xs_2;
+  margin: 0;
+} */
+
+.modal-content-full-width {
+  min-width: 600px;
+  min-height: 980px;
+  border: 0px red;
+  padding: 0.5em;
+  margin: auto;
+  //margin-top: 30px;
+  background-color: $background_color;
+}
+
+.modal-dialog-full-width {
+  max-width: 600px;
+  max-height: 980px;
+  margin-top: 20px;
+  background-color: $background_color ;
+}
+
+.modal-body-full-width {
+  padding: $indent_sm;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  align-content: center;
+  margin: auto;
+  max-height: 840px;
+  border: 0px solid red;
+  background-color: $background_color;
+}
+
+
+.modal-body {
+  padding: $indent_xs;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  align-content: center;
+  margin: 0;
+  max-height: 800px;
+  border: 0px solid red;
+  background-color: $background_color;
+}
+
+.modal-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+
+/* MODAL DIALOGS BLOCK END */
+
+
+/* VOTE IMAGE BLOCK START */
+.single_vote_image_left_aligned {
+  border: 1px dotted gray;
+  //border: 2px dotted red;
+  padding: 2px;
+  margin: 5px;
+  max-width: 300px;
+  max-height: auto;
+}
+
+.image_in_3_columns_list {
+  border: 1px dotted gray;
+  //border: 2px dotted green;
+  padding: 2px;
+  margin: 2px;
+  max-width: 580px;
+  max-height: auto;
+}
+
+.vote_item_selection_image {
+  border: 1px dotted gray;
+  padding: 2px;
+  margin: 5px;
+  max-width: 240px;
+  max-height: auto;
+}
+
+/* VOTE IMAGE BLOCK END */
+
+.chart_progress_bar {
+  width:220px;
+  margin-left: 10px;
+}
+
+
+
+/* TAG IMAGE BLOCK START */
+.tag_image_left_aligned {
+  border: 1px dotted gray;
+  padding: 2px;
+  margin: 5px;
+  max-width: 580px;
+  max-height: auto;
+}

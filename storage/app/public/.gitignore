@@ -1,0 +1,9 @@
+# *
+# !.gitignore
+tmp
+.tag-details
+.user-avatars
+.vote-items
+.votes
+.attached-images
+

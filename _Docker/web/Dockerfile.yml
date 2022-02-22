@@ -1,0 +1,36 @@
+FROM php:7.2-apache
+
+RUN apt-get update && \
+    apt-get install -y \
+    python \
+    libfreetype6-dev \
+    libwebp-dev \
+    libjpeg62-turbo-dev \
+    libpng-dev \
+    nano \
+    git-core \
+    curl \
+    build-essential \
+    openssl \
+    libssl-dev \
+    libgmp-dev \
+    libldap2-dev \
+    netcat \
+    sqlite3 \
+    libsqlite3-dev \
+    && git clone https://github.com/nodejs/node.git \
+    && cd node \
+    && git checkout v12.0.0 \
+    && ./configure \
+     && make \
+     && make install
+
+  RUN npm install cross-env
+  
+  RUN  docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-webp-dir=/usr/include/  --with-jpeg-dir=/usr/include/
+
+
+  RUN  docker-php-ext-install gd pdo pdo_mysql pdo_sqlite zip gmp bcmath pcntl ldap sysvmsg exif \
+&& a2enmod rewrite
+
+COPY virtualhost.conf /etc/apache2/sites-enabled/000-default.conf

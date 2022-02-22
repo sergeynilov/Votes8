@@ -1,0 +1,5 @@
+full_name, address, lead_type, customer_type, box_client_id, account_type, po_box, office_fax, emails, phones, created_at, updated_at
+
+"Mr. John Smith", "3256 Epiphenomenal Avenue, Minneapolis, MN, 55416", "lead value", SS, "box client 1", Individual, "po box # 1", "office fax 123", "JohnSmith@sofactor.com;JohnSmith@yahoo.com;JohnSmith@mail.com", "1234-0987-0986=Phone number;6543-098-1234=Home phone","2018-07-18 12:25:29", "2018-07-18 12:25:29"
+
+"Tom Huges", "USA, Los Angeles, Beverly Hills, 90211", "lead value 2", RS, "box client 2", "Business", "po box # 2", "office fax 9876", "user2@softutctor.com; user2@yahoo.com; user2@mail.com", "1234-0317-0694=Home phone;6013-0298-1934=International phone number","2018-07-18 12:25:29", "2018-07-18 12:25:29"

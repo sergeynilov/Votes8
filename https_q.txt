@@ -1,0 +1,73 @@
+# sudo service apache2 restart
+Job for apache2.service failed because the control process exited with error code.
+See "systemctl status apache2.service" and "journalctl -xe" for details.
+root@nsn-do-lamp:/etc/apache2/sites-enabled# systemctl status apache2.service
+● apache2.service - The Apache HTTP Server
+   Loaded: loaded (/lib/systemd/system/apache2.service; enabled; vendor preset: enabled)
+  Drop-In: /lib/systemd/system/apache2.service.d
+           └─apache2-systemd.conf
+   Active: failed (Result: exit-code) since Mon 2019-08-19 11:02:32 UTC; 12s ago
+  Process: 2616 ExecStart=/usr/sbin/apachectl start (code=exited, status=1/FAILURE)
+
+Aug 19 11:02:32 nsn-do-lamp systemd[1]: Starting The Apache HTTP Server...
+Aug 19 11:02:32 nsn-do-lamp apachectl[2616]: Action 'start' failed.
+Aug 19 11:02:32 nsn-do-lamp apachectl[2616]: The Apache error log may have more information.
+Aug 19 11:02:32 nsn-do-lamp systemd[1]: apache2.service: Control process exited, code=exited status=1
+Aug 19 11:02:32 nsn-do-lamp systemd[1]: apache2.service: Failed with result 'exit-code'.
+Aug 19 11:02:32 nsn-do-lamp systemd[1]: Failed to start The Apache HTTP Server.
+root@nsn-do-lamp:/etc/apache2/sites-enabled# journalctl -xe
+Aug 19 11:02:26 nsn-do-lamp systemd[1]: apache2.service: Failed with result 'exit-code'.
+Aug 19 11:02:26 nsn-do-lamp systemd[1]: Failed to start The Apache HTTP Server.
+-- Subject: Unit apache2.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+--
+-- Unit apache2.service has failed.
+--
+-- The result is RESULT.
+Aug 19 11:02:28 nsn-do-lamp sshd[2567]: Invalid user karaf from 103.110.89.148 port 52536
+Aug 19 11:02:28 nsn-do-lamp sshd[2567]: pam_unix(sshd:auth): check pass; user unknown
+Aug 19 11:02:28 nsn-do-lamp sshd[2567]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=103.110.89.148
+Aug 19 11:02:28 nsn-do-lamp sshd[2569]: Failed password for invalid user usuario from 46.101.1.198 port 44658 ssh2
+Aug 19 11:02:28 nsn-do-lamp sshd[2569]: Connection closed by invalid user usuario 46.101.1.198 port 44658 [preauth]
+Aug 19 11:02:30 nsn-do-lamp sshd[2567]: Failed password for invalid user karaf from 103.110.89.148 port 52536 ssh2
+Aug 19 11:02:30 nsn-do-lamp sshd[2567]: Received disconnect from 103.110.89.148 port 52536:11: Bye Bye [preauth]
+Aug 19 11:02:30 nsn-do-lamp sshd[2567]: Disconnected from invalid user karaf 103.110.89.148 port 52536 [preauth]
+Aug 19 11:02:30 nsn-do-lamp sshd[2607]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=114.236.159.106  user=root
+Aug 19 11:02:32 nsn-do-lamp sudo[2610]:     root : TTY=pts/0 ; PWD=/etc/apache2/sites-enabled ; USER=root ; COMMAND=/usr/sbin/service apache2 restart
+Aug 19 11:02:32 nsn-do-lamp sudo[2610]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Aug 19 11:02:32 nsn-do-lamp systemd[1]: Starting The Apache HTTP Server...
+-- Subject: Unit apache2.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+--
+-- Unit apache2.service has begun starting up.
+Aug 19 11:02:32 nsn-do-lamp apachectl[2616]: Action 'start' failed.
+Aug 19 11:02:32 nsn-do-lamp apachectl[2616]: The Apache error log may have more information.
+Aug 19 11:02:32 nsn-do-lamp systemd[1]: apache2.service: Control process exited, code=exited status=1
+Aug 19 11:02:32 nsn-do-lamp sudo[2610]: pam_unix(sudo:session): session closed for user root
+Aug 19 11:02:32 nsn-do-lamp systemd[1]: apache2.service: Failed with result 'exit-code'.
+Aug 19 11:02:32 nsn-do-lamp systemd[1]: Failed to start The Apache HTTP Server.
+-- Subject: Unit apache2.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+--
+-- Unit apache2.service has failed.
+--
+-- The result is RESULT.
+Aug 19 11:02:32 nsn-do-lamp sshd[2607]: Failed password for root from 114.236.159.106 port 45753 ssh2
+Aug 19 11:02:35 nsn-do-lamp sshd[2607]: Failed password for root from 114.236.159.106 port 45753 ssh2
+Aug 19 11:02:36 nsn-do-lamp sshd[2607]: Failed password for root from 114.236.159.106 port 45753 ssh2
+Aug 19 11:02:37 nsn-do-lamp sshd[2645]: Invalid user demo from 128.199.170.77 port 50492
+Aug 19 11:02:37 nsn-do-lamp sshd[2645]: pam_unix(sshd:auth): check pass; user unknown
+Aug 19 11:02:37 nsn-do-lamp sshd[2645]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=128.199.170.77
+Aug 19 11:02:39 nsn-do-lamp sshd[2645]: Failed password for invalid user demo from 128.199.170.77 port 50492 ssh2
+Aug 19 11:02:39 nsn-do-lamp sshd[2607]: Failed password for root from 114.236.159.106 port 45753 ssh2
+Aug 19 11:02:39 nsn-do-lamp sshd[2645]: Received disconnect from 128.199.170.77 port 50492:11: Bye Bye [preauth]
+Aug 19 11:02:39 nsn-do-lamp sshd[2645]: Disconnected from invalid user demo 128.199.170.77 port 50492 [preauth]
+Aug 19 11:02:42 nsn-do-lamp sshd[2607]: Failed password for root from 114.236.159.106 port 45753 ssh2
+Aug 19 11:02:44 nsn-do-lamp sshd[2607]: Failed password for root from 114.236.159.106 port 45753 ssh2
+Aug 19 11:02:44 nsn-do-lamp sshd[2607]: error: maximum authentication attempts exceeded for root from 114.236.159.106 port 45753 ssh2 [preauth]
+Aug 19 11:02:44 nsn-do-lamp sshd[2607]: Disconnecting authenticating user root 114.236.159.106 port 45753: Too many authentication failures [preauth]
+Aug 19 11:02:44 nsn-do-lamp sshd[2607]: PAM 5 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=114.236.159.106  user=root
+Aug 19 11:02:44 nsn-do-lamp sshd[2607]: PAM service(sshd) ignoring max retries; 6 > 3

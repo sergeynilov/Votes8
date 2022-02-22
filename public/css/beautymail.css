@@ -1,0 +1,26 @@
+
+body {
+	background-color: yellow;
+	border: 2px dotted green;
+}
+
+.email_title {
+	font-size: larger;
+	font-weight: bold;
+	background-color: red;
+}
+
+
+.email_subtitle {
+	font-size: large;
+	font-weight: normal;
+	background-color: maroon;
+}
+
+.a_link {
+	cursor: pointer;
+}
+
+ul.no_list_style {
+	list-style-type: none;
+}

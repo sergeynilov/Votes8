@@ -1,0 +1,12 @@
+
+FROM php:7.2-apache
+
+RUN apt-get update -y && apt-get install -y sendmail libpng-dev
+
+RUN docker-php-ext-install \
+    pdo_mysql \
+    gd \
+    php-gd \
+    && a2enmod \
+    rewrite
+
